@@ -1,17 +1,36 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './css/App.css'
-import ClassTable from './ClassTable'
+
+export default function App() {
+  const [time, setTime] = useState(10);
 
 
+  useEffect(() => {
 
-function App() {
-  const [count, setCount] = useState(0)
+    const myinterval = setInterval(() => {
+
+      if (time == 0)
+        {setTime(10)}
+      else{setTime(time - 1)}
+    }, 1000);
+
+    return () => clearInterval(myinterval);
+  }, [time]);
+ 
 
   return (
     <>
-      <ClassTable/>
+      <div className='header'>
+      </div>
+
+      <div className='middle'>
+
+        {time}
+      
+      </div>
+
+      <div className='footer'>
+      </div>
     </>
   )
 }
-
-export default App
