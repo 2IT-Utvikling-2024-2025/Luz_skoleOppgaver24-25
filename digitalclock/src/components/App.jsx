@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import './css/App.css'
+import Balabac from "react-explode/Balabac";
 
 export default function App() {
   const [time, setTime] = useState(10);
@@ -10,6 +11,8 @@ export default function App() {
     const myinterval = setInterval(() => {
 
       if (time == 0)
+        
+      
         {setTime(10)}
       else{setTime(time - 1)}
     }, 1000);
@@ -24,8 +27,10 @@ export default function App() {
       </div>
 
       <div className='middle'>
-
+  
         {time}
+        <Balabac size="400" delay={5} repeatDelay={2} repeat={500000000000} />;
+
       
       </div>
 
