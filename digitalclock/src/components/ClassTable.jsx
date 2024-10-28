@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 
 const className = "2ITA"
 
@@ -36,7 +36,7 @@ export default function ClassTable() {
     const classList = classTable.map(
 
         student =>
-            <li> key={student.id}>
+            <li> key={student.id}
 
                 <classItem student={classTable[student.id - 1]} ></classItem>
 

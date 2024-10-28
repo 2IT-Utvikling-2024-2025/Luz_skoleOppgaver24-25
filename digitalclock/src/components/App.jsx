@@ -1,14 +1,13 @@
 import { useState } from 'react'
 import './css/App.css'
 import './css/index.css'
-import LengthConverter from './LengdeEndring';
+import ClassTable from './ClassTable'
 
 function App() {
 
   return (
     <>
-      <LengthConverter></LengthConverter>
-      
+      <ClassTable></ClassTable>
     </>
   )
 }
