@@ -1,3 +1,8 @@
+
+
+
+
+
 export default function Student(props) {
     return (
         <div>
@@ -5,3 +10,4 @@ export default function Student(props) {
         </div>
     )
 }
+

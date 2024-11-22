@@ -1,13 +1,15 @@
 import { useState } from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './css/App.css'
 import './css/index.css'
-import ClassTable from './ClassList'
+import Routing from './RoutingApp/Routing'
+
 
 function App() {
 
   return (
     <>
-      <ClassTable></ClassTable>
+       <Routing></Routing>
     </>
   )
 }
